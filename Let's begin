@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Agent Hub</title>
+</head>
+
+<body>
+
+    <h1>AI Agent Hub</h1>
+
+    <h2>Learn. Build. Automate.</h2>
+
+    <p>
+        Welcome to my AI Agent Hub.
+        This is my journey into building AI agents,
+        automation workflows, and intelligent business solutions.
+    </p>
+
+    <h2>What are AI Agents?</h2>
+
+    <p>
+        AI agents are systems that can understand a goal,
+        use tools, make decisions, and complete tasks.
+    </p>
+
+    <h2>My Projects</h2>
+
+    <ul>
+        <li>AI Research Agent</li>
+        <li>Business Intelligence Agent</li>
+        <li>Automation Agent</li>
+    </ul>
+
+    <h2>My Learning Journey</h2>
+
+    <p>
+        I am learning how to build AI-powered applications
+        using modern AI models, tools, APIs, and automation.
+    </p>
+
+</body>
+</html>
