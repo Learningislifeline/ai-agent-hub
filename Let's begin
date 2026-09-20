@@ -1,44 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Agent Hub</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Neeraj's AI Agent Hub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #070b14;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 24px;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #7c5cff;
+}
+
+.nav-link {
+    color: #aaa;
+    text-decoration: none;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 90px 0 80px;
+}
+
+.welcome {
+    font-size: 22px;
+    color: #a99cff;
+    margin-bottom: 22px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #333b55;
+    border-radius: 30px;
+    color: #a99cff;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.gradient {
+    background: linear-gradient(90deg, #7c5cff, #25d9ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: auto;
+    color: #a5a9b8;
+    font-size: 19px;
+}
+
+.buttons {
+    margin-top: 35px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.primary {
+    background: #7c5cff;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #343b50;
+    color: white;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 70px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 45px;
+}
+
+.section-title p {
+    font-size: 16px;
+    color: #9298aa;
+    margin-top: 10px;
+}
+
+/* PROJECT CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #101624;
+    border: 1px solid #20283b;
+    padding: 30px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #7c5cff;
+}
+
+.icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #9298aa;
+}
+
+/* ROADMAP */
+
+.roadmap {
+    max-width: 700px;
+    margin: auto;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding: 22px;
+    background: #101624;
+    border-radius: 15px;
+    border: 1px solid #20283b;
+}
+
+.number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #7c5cff;
+}
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+}
+
+.about p {
+    color: #a5a9b8;
+    font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    border-top: 1px solid #20283b;
+    padding: 35px 0;
+    text-align: center;
+    color: #73798a;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding: 70px 0 50px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .welcome {
+        font-size: 19px;
+    }
+
+}
+
+</style>
 </head>
 
 <body>
 
-    <h1>AI Agent Hub</h1>
+<div class="container">
 
-    <h2>Learn. Build. Automate.</h2>
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        AI <span>Agent Hub</span>
+    </div>
+
+    <a class="nav-link" href="#projects">
+        Projects
+    </a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <div class="welcome">
+        👋 Welcome Neeraj — Your First Website!
+    </div>
+
+    <div class="badge">
+        ⚡ Building the future with AI
+    </div>
+
+    <h1>
+        Build <span class="gradient">AI Agents</span>.<br>
+        Automate What Matters.
+    </h1>
 
     <p>
-        Welcome to my AI Agent Hub.
-        This is my journey into building AI agents,
-        automation workflows, and intelligent business solutions.
+        A personal learning lab for building AI agents,
+        intelligent automation and data-driven business solutions.
     </p>
 
-    <h2>What are AI Agents?</h2>
+    <div class="buttons">
+
+        <a href="#projects" class="btn primary">
+            Explore Projects →
+        </a>
+
+        <a href="#learning" class="btn secondary">
+            My Learning Journey
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+    <div class="section-title">
+
+        <h2>What I'm Building</h2>
+
+        <p>
+            Experiments and projects in the world of AI agents.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">
+                🤖
+            </div>
+
+            <h3>
+                AI Research Agent
+            </h3>
+
+            <p>
+                An agent that can research information,
+                analyze sources and create useful summaries.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                📊
+            </div>
+
+            <h3>
+                Business Intelligence Agent
+            </h3>
+
+            <p>
+                Turning business data into insights,
+                trends and actionable information.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon">
+                ⚙️
+            </div>
+
+            <h3>
+                Automation Agent
+            </h3>
+
+            <p>
+                Exploring how AI agents can automate
+                repetitive business workflows.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- LEARNING ROADMAP -->
+
+<section id="learning">
+
+    <div class="section-title">
+
+        <h2>My AI Learning Roadmap</h2>
+
+        <p>
+            Learning by building real projects.
+        </p>
+
+    </div>
+
+
+    <div class="roadmap">
+
+        <div class="step">
+
+            <div class="number">
+                01
+            </div>
+
+            <div>
+
+                <h3>
+                    AI Fundamentals
+                </h3>
+
+                <p>
+                    Understand LLMs, prompts, APIs and AI tools.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                02
+            </div>
+
+            <div>
+
+                <h3>
+                    Build AI Agents
+                </h3>
+
+                <p>
+                    Learn tools, workflows, memory and decision making.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                03
+            </div>
+
+            <div>
+
+                <h3>
+                    Connect Business Data
+                </h3>
+
+                <p>
+                    Work with Excel, databases, dashboards and APIs.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="step">
+
+            <div class="number">
+                04
+            </div>
+
+            <div>
+
+                <h3>
+                    Build Real Products
+                </h3>
+
+                <p>
+                    Turn AI experiments into useful business applications.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section>
+
+    <div class="about">
+
+        <div class="section-title">
+
+            <h2>Why I'm Building This</h2>
+
+        </div>
+
+        <p>
+            This is my first website and the beginning of my
+            journey into AI, automation, data and intelligent
+            business solutions.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
 
     <p>
-        AI agents are systems that can understand a goal,
-        use tools, make decisions, and complete tasks.
+        AI Agent Hub • Learn. Build. Automate.
     </p>
-
-    <h2>My Projects</h2>
-
-    <ul>
-        <li>AI Research Agent</li>
-        <li>Business Intelligence Agent</li>
-        <li>Automation Agent</li>
-    </ul>
-
-    <h2>My Learning Journey</h2>
 
     <p>
-        I am learning how to build AI-powered applications
-        using modern AI models, tools, APIs, and automation.
+        Built by Neeraj 🚀
     </p>
+
+</footer>
+
+
+</div>
 
 </body>
+
 </html>
